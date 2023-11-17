@@ -43,7 +43,7 @@ body {
 }
 
 
-/* Section Result */
+/* Section RESULT */
 .result {
     display: flex;
     flex-direction: column;
@@ -109,4 +109,56 @@ body {
     line-height: 1.4rem;
 }
 
-/* Section Result */
+/* Section SUMMARY */
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    height: 60%;
+}
+
+.summary h2 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+
+.cards .card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.red {
+    background-color: hsl(0, 100%, 67%);
+}
+
+.yellow {
+    background-color: hsl(39, 100%, 56%);
+}
+
+.cyan {
+    background-color: hsl(166, 100%, 37%);
+}
+
+.blue {
+    background-color: hsl(234, 85%, 45%);
+}
+
+.group {
+    display: flex;
+}
+
+button {
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: #303B59;
+    font-size: 1rem;
+    font-weight: bold;
+    color: hsl(0, 0%, 100%);
+    border: none;
+}
