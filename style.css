@@ -30,11 +30,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'HankenGrotesk-Bold', sans-serif;
 }
 
 body {
     height: 100vh;
+    font-size: 18px;
 }
 
 #main {
@@ -44,7 +45,6 @@ body {
 
 /* Section Result */
 .result {
-    font-family: 'HankenGrotesk';
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -53,14 +53,15 @@ body {
     height: 40%;
     border-radius: 0 0 2rem 2rem;
     background: rgb(102,67,254);
-    background: linear-gradient(180deg, rgba(102,67,254,1) 0%, rgba(91,63,252,1) 50%, rgba(51,45,233,1) 100%);
+    background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%,  hsl(241, 81%, 54%) 100%);
 }
 
 .result h2   {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.1rem;
+    color: hsl(0, 0%, 100%);
+    opacity: 0.6;
+    font-size: 1rem;
     padding: 1rem 0;
-    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .result .circle-score {
@@ -71,17 +72,21 @@ body {
     height: 40%;
     clip-path: circle();
     background: rgb(75,35,201);
-    background: linear-gradient(180deg, rgba(75,35,201,1) 0%, rgba(69,50,238,1) 100%);
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    margin-bottom: 1rem;
 }
 
 .circle-score span:first-child {
     font-size: 3rem;
-    color: white;
-    margin-bottom: 0.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
 }
 
 .circle-score span:last-child {
-    color: rgba(255, 255, 255, 0.5);
+    color: hsl(0, 0%, 100%);
+    opacity: 0.4;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
 }
 
 .text-content {
@@ -91,13 +96,17 @@ body {
 }
 
 .text-content h3 {
-    color: white;
-    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
 .text-content p {
     color: rgba(255, 255, 255, 0.6);
-    margin-top: 0.8rem;
+    margin-top: 0.6rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
 }
 
 /* Section Result */
