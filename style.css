@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* 800 is often used for ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+}
+
+#main {
+    height: 100%;
+}
+
+
+/* Section Result */
+.result {
+    font-family: 'HankenGrotesk';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    height: 40%;
+    border-radius: 0 0 2rem 2rem;
+    background: rgb(102,67,254);
+    background: linear-gradient(180deg, rgba(102,67,254,1) 0%, rgba(91,63,252,1) 50%, rgba(51,45,233,1) 100%);
+}
+
+.result h2   {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+
+.result .circle-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 40%;
+    clip-path: circle();
+    background: rgb(75,35,201);
+    background: linear-gradient(180deg, rgba(75,35,201,1) 0%, rgba(69,50,238,1) 100%);
+}
+
+.circle-score span:first-child {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.circle-score span:last-child {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.text-content {
+    margin: 0 auto;
+    width: 75%;
+    margin-bottom: 2rem;
+}
+
+.text-content h3 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.text-content p {
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 0.8rem;
+}
+
+/* Section Result */
